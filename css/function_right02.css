@@ -1,0 +1,372 @@
+body {
+    /* background: #c7c7c7; */
+    background-color: #f1ece1;
+
+}
+
+.zheng {
+    width: 100%;
+    height: 753px;
+    padding-top: 100px;
+    padding-left: 260px;
+}
+
+.zheng .left02 {
+    float: left;
+    width: 400px;
+    height: 610px;
+    /* background-color: aqua; */
+}
+
+.zheng .left02 .left_hd {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* background: lightcoral; */
+}
+
+@keyframes le_dh {
+
+    /* 开始状态 */
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-102px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(102px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    87% {
+        transform: rotate(-30deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    92% {
+        transform: rotate(0deg);
+    }
+
+    95% {
+        transform: rotate(-30deg);
+    }
+
+    97% {
+        transform: rotate(0deg);
+    }
+
+    /* 结束状态 */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.zheng .left02 .left_hd .le {
+    position: absolute;
+    top: 72px;
+    left: 25px;
+    font-size: 100px;
+    animation-name: le_dh;
+    /* 持续时间 */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes le02_dh {
+
+    /* 开始状态 */
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(125px);
+    }
+
+    20% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(-125px);
+    }
+
+    40% {
+        transform: translateX(0px);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    87% {
+        transform: rotate(-30deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    92% {
+        transform: rotate(0deg);
+    }
+
+    95% {
+        transform: rotate(-30deg);
+    }
+
+    97% {
+        transform: rotate(0deg);
+    }
+
+    /* 结束状态 */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.zheng .left02 .left_hd .le_02 {
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    font-size: 100px;
+    animation-name: le02_dh;
+    /* 持续时间 */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.zheng .left02 .left_hd .tian {
+    position: absolute;
+    top: 72px;
+    left: 150px;
+    font-size: 100px;
+
+}
+
+@keyframes pai_dh {
+
+    /* 开始状态 */
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(102px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-102px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    87% {
+        transform: rotate(-30deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    92% {
+        transform: rotate(0deg);
+    }
+
+    95% {
+        transform: rotate(-30deg);
+    }
+
+    97% {
+        transform: rotate(0deg);
+    }
+
+    /* 结束状态 */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.zheng .left02 .left_hd .pai {
+    position: absolute;
+    top: 72px;
+    left: 275px;
+    font-size: 100px;
+    animation-name: pai_dh;
+    /* 持续时间 */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes pai02_dh {
+
+    /* 开始状态 */
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(-125px);
+    }
+
+    20% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(125px);
+    }
+
+    40% {
+        transform: translateX(0px);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    87% {
+        transform: rotate(-30deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    92% {
+        transform: rotate(0deg);
+    }
+
+    95% {
+        transform: rotate(-30deg);
+    }
+
+    97% {
+        transform: rotate(0deg);
+    }
+
+    /* 结束状态 */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.zheng .left02 .left_hd .pai_02 {
+    position: absolute;
+    top: 174px;
+    left: 150px;
+    font-size: 100px;
+    animation-name: pai02_dh;
+    /* 持续时间 */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+.zheng .left02 .yinc{
+    float: left;
+    width: 380px;
+    height: 310px;
+    overflow: hidden;
+}
+.zheng .left02 .left_bd {
+    float: left;
+    padding-top: 50px;
+    padding-left: 65px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    width: 400px;
+    height: 280px;
+    /* background-color: lightgreen; */
+    overflow-y:auto; 
+}
+
+.zheng .left02 .left_bd li{
+    float: left;
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* background-color: lightgrey; */
+    border: 2px solid #FFF;
+    text-align: center;
+    line-height: 71px;
+    font-size: 16px;
+}
+.zheng .middle02 {
+    float: left;
+    width: 510px;
+    height: 600px;
+    /* padding-left: 50px; */
+    border: 5px solid #FFF;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+}
+.zheng .middle02 .image{
+    float: left;
+    width: 500px;
+    height: 100%;
+    /* background: url(../images/enj014.jpg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100%; */
+
+}
+.zheng .right02 {
+    float: left;
+    width: 90px;
+    height: 610px;
+    /* background-color: pink; */
+    padding-left: 22px;
+}
+.zheng .right02 .btn01,.btn02,.btn03{
+    float: left;
+    width: 40px;
+    height: 33.3%;
+    border-top: 5px solid #666;
+    color: #666;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px ;
+    transition: all 1s;
+}
+.zheng .right02 .btn03{
+    border-bottom: 5px solid #666;
+}
+.zheng .right02 .btn01:hover,.btn02:hover,.btn03:hover{
+    background-color: #666;
+    color: #f1ece1;
+}
+
+
+

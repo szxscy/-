@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐天拍导出照片-供大家趣味照相的拍照网站，乐天派、趣味拍照、</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="乐天拍-供大家趣味照相的拍照网站，乐天派、趣味拍照、乐天知命，故不忧。乐天知命,古来谁会。" />
+    <!-- 关键字 -->
+    <meta name="Keywords" content="乐天拍,乐天派,拍照,趣味,乐天知命,喜怒哀惊" />
+    <link rel="shortcut icon" href="../images/bitbug_favicon (3).ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="../css/chushihua.css">
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入清除样式文件 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 引入主页样式文件 -->
+    <link rel="stylesheet" href="../css/function_left02.css">
+    <!-- 引入全局变量 route -->
+    <script src="../js/jiekou.js"></script>
+</head>
+
+<body>
+    <div class="zheng" >
+        <div class="left02">
+            <div class="left_hd">
+                <ul>
+                    <li class="le"><img src="../images/le.png" alt=""></li>
+                    <li class="le_02"><img src="../images/le.png" alt=""></li>
+                    <li class="tian"><img src="../images/tian.png" alt=""></li>
+                    <li class="pai"><img src="../images/pai.png" alt=""></li>
+                    <li class="pai_02"><img src="../images/pai.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="left_bd">
+                <ul style="display: block;" class="happy">
+                    <li>春日偶成</li>
+                    <li>云淡风轻近午天，</li>
+                    <li>傍花随柳过前川。</li>
+                    <li>时人不识余心乐，</li>
+                    <li>将谓偷闲学少年。</li>
+                </ul>
+                <ul style="display: none;" class="angry">
+                    <li>莫生气</li>
+                    <li>人生就像一场戏，</li>
+                    <li>因为有缘才相聚。</li>
+                    <li>相扶到老不容易，</li>
+                    <li>是否更该去珍惜。</li>
+                </ul>
+                <ul style="display: none;" class="upset">
+                    <li>|</li>
+                    <li>弃我去者,</li>
+                    <li>昨日之日不可留;</li>
+                    <li>乱我心者,</li>
+                    <li>今日之日多烦忧。</li>
+                </ul>
+                <ul style="display: none;" class="shocked">
+                    <li>幽窗小记</li>
+                    <li>宠辱不惊，</li>
+                    <li>看庭前花开花落；</li>
+                    <li>去留无意，</li>
+                    <li>望天上云卷云舒。</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="middle02">
+            <div class="image">
+                <img src="http://10.20.90.114:5000/static/tmp1.png" alt="">
+            </div>
+        </div>
+        <div class="right02">
+            <a href="./function_left01.html">
+                <div class="btn01">再来一张</div>
+            </a>
+            <!-- <button >下载图片</button> -->
+            <div onClick="saveFile();" type="button" class="btn02">下载图片</div>
+            <a href="./function_Home.html">
+                <div class="btn03">返回首页</div>
+            </a>
+        </div>
+    </div>
+    <img src="../images/sun.gif" alt="" class="tianshi">
+
+
+    <!-- 鼠标特效 -->
+    <!-- <script src="../js/canvas2image.js"></script> -->
+    <!-- <canvas id='world' style="z-index: 9;position: absolute;top: 0;left: 0;"></canvas> -->
+    <!-- <script src="../js/shubiao2.js"></script> -->
+    <script src="../js/tianshi.js"></script>
+    <script src="../js/function_left02.js"></script>
+    <!-- <script>
+        var middle02 = document.querySelector('.middle02');
+        var route = window.globalConfig.api;
+        function downloadImage(imgsrc, name) {
+            const image = new Image();
+            // 解决跨域 Canvas 污染问题
+            image.setAttribute('crossOrigin', 'anonymous');
+            image.onload = function () {
+                const canvas = document.createElement('canvas');
+                canvas.width = image.width;
+                canvas.height = image.height;
+                const context = canvas.getContext('2d');
+                context.drawImage(image, 0, 0, image.width, image.height);
+                const url = canvas.toDataURL('image/png');
+                const a = document.createElement('a');
+                const event = new MouseEvent('click');
+                a.download = name || 'photo';
+                a.href = url;
+                a.dispatchEvent(event);
+            };
+            image.src = imgsrc;
+        }
+
+        // 绑定点击事件
+        var btn02 = document.querySelector('.btn02');
+        btn02.onclick = function () {
+            mgsrc = route + 'static/tmp1.png';
+            name = 'enjoy';
+            downloadImage(mgsrc, name);
+        }
+
+
+    </script>
+    <script>
+
+
+        function getUrlParams(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+        //调用方法。。。。
+        // alert(getUrlParams("biaoqing"));
+        // console.log(getUrlParams("biaoqing"));
+        var bq = getUrlParams("biaoqing");
+        var happy=document.querySelector('.happy');
+        var angry=document.querySelector('.angry');
+        var upset=document.querySelector('.upset');
+        var shocked=document.querySelector('.shocked');
+        console.log(bq);
+        if (bq == 0) {
+            console.log(0);
+            alert('你有点高兴');
+            happy.style.display='block';
+            angry.style.display='none';
+            upset.style.display='none';
+            shocked.style.display='none';
+        } else if (bq == 1) {
+            console.log(1);
+            alert('你有点生气');
+            happy.style.display='none';
+            angry.style.display='block';
+            upset.style.display='none';
+            shocked.style.display='none';
+        } else if (bq == 2) {
+            console.log(2);
+            alert('你有点难过');
+            happy.style.display='none';
+            angry.style.display='none';
+            upset.style.display='block';
+            shocked.style.display='none';
+        } else if (bq == 3) {
+            console.log(3);
+            alert('你有点惊恐');
+            happy.style.display='none';
+            angry.style.display='none';
+            upset.style.display='none';
+            shocked.style.display='block';
+        }else{
+            alert('识别失败,请重新拍一张');
+        }
+        
+
+    </script> -->
+</body>
+
+</html>

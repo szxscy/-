@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>乐天拍-表情识别拍照-供大家趣味照相的拍照网站，乐天派、趣味拍照、</title>
+
+    <!-- 网站说明 -->
+    <meta name="description" content="乐天拍-供大家趣味照相的拍照网站，乐天派、趣味拍照、乐天知命，故不忧。乐天知命,古来谁会。" />
+    <!-- 关键字 -->
+    <meta name="Keywords" content="乐天拍,乐天派,拍照,趣味,乐天知命,喜怒哀惊" />
+    <!-- 引入小图标 -->
+    <link rel="shortcut icon" href="../images/bitbug_favicon (3).ico" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <!-- 引入全局变量 route -->
+    <script src="../js/jiekou.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <video muted class="video" src="../images/final_1.mp4" autoplay="autoplay" loop="loop">
+            你的浏览器不支持视频
+        </video>
+        <div class="zhong">
+            <div class="hez">
+                <div class="logo"></div>
+                <div class="nh" id="nh">
+                    <div class="yh" id="yh">
+                        <div class="yu1"></div>
+                        <div class="yu2"></div>
+                        <div class="yu3"></div>
+                    </div>
+                </div>
+
+                <div class="zuzi" id="zuzi">
+                    <div class="chara1">乐 天 拍</div>
+                    <div class="chara2">阳光正好，微风不燥，岁月里的人一切都好。</div>
+                    <input type="button" class="enter" value="进  入" id="enter">
+                </div>
+
+                <div class="ceb1" id="ceb1">
+                    <div class="cchara1">乐 天 拍</div>
+                    <input type="text" class="user" id="user">
+                    <div class="cchara2">账号</div>
+                    <div class="cchara3">密码</div>
+                    <input type="button" class="cchara4" value="注册" id="cchara4">
+                    <input type="password" class="pass" id="pass">
+                    <a href="#">
+                        <input type="button" class="but" value="登 录" id="denglu">
+                    </a>
+                </div>
+                <div class="ceb2" id="ceb2">
+                    <div class="echara1">乐 天 拍</div>
+                    <div class="echara2">账号</div>
+                    <div class="echara3">输入密码</div>
+                    <div class="echara4">确认输入密码</div>
+                    <input type="text" class="user2">
+                    <input type="password" class="pass2">
+                    <input type="password" class="qpass2">
+                    <table border="0" cellspacing="5" cellpadding="5" >
+                        <tr>
+                            <td> <div id="checkCode" id="code"  onclick="createCode(4)" ></div></td>
+                            <td> <span onclick="createCode(4)" id="spans">看不清换一张</span></td>
+                        </tr>
+                        <tr>
+                            <td id="yancode">验证码</td>
+                            <td><input type="text" id="inputCode"/></td>
+                        </tr>
+                    </table>
+                    <input type="button" class="but2" value="完成注册" id="but2">
+                </div>
+            </div>
+            <img src="../images/sun.gif" alt="" class="tianshi">
+            <script src="../js/tianshi.js"></script>
+            <script src="../js/index.js"></script>
+            <script src="../js/yan.js"></script>
+        </div>
+
+
+    </div>
+    <!-- <canvas id='world'></canvas>
+    <script src="../js/shubiao.js"></script> -->
+</body>
+</html>

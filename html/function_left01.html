@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐天拍-表情识别拍照-供大家趣味照相的拍照网站，乐天派、趣味拍照、</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="乐天拍-供大家趣味照相的拍照网站，乐天派、趣味拍照、乐天知命，故不忧。乐天知命,古来谁会。" />
+    <!-- 关键字 -->
+    <meta name="Keywords" content="乐天拍,乐天派,拍照,趣味,乐天知命,喜怒哀惊" />
+    <link rel="shortcut icon" href="../images/bitbug_favicon (3).ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="../css/chushihua.css">
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入清除样式文件 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 引入主页样式文件 -->
+    <link rel="stylesheet" href="../css/function_left01.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- 引入全局变量 route -->
+    <script src="../js/jiekou.js"></script>
+</head>
+
+<body>
+    <div class="w">
+        <div class="quan">
+            <div class="zhongjian">
+                <div class="zj_left">
+                    <ul class="left_hd">
+                        <li>乐</li>
+                        <li>天</li>
+                        <li>拍</li>
+                    </ul>
+                    <div class="left_bd">
+                        <div class="tishi">
+                            请看向摄像头<br>
+                            展现你的表情
+                        </div>
+                        <a href="#">
+                            <div class="btn">
+
+                                 <button id="capture"><img src="../images/相机 (3).png" alt=""></button>
+                                 
+                            </div>
+                        </a>
+                </div>
+                </div>
+                <div class="zj_right">
+                    <img src="../images/left_02.jpg" alt="">
+                    <video id="video" autoplay=""style='position: absolute;top: 0;left: 0;  width="500" height="600"z-index: 100;'></video>
+                    <canvas id="canvas" width="500px" height="600px" style="display: block;position: absolute;top: 0;left: 0; z-index: 110;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="../images/sun.gif" alt="" class="tianshi">
+    
+    <!-- 鼠标特效 -->
+    <!-- <canvas id='world' style="z-index: 9;position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></canvas> -->
+    <script src="../js/shubiao.js"></script>
+
+    <!-- <button onClick="saveFile(filename);" type="button">下载图片</button> -->
+    <!-- <canvas id="canvas" width="500" height="600" style="display: block;"></canvas> -->
+    <script type="text/javascript" src="../js/function_left01.js"></script>
+    <script src="../js/tianshi.js"></script>
+    <!-- <script src="../js/function_left01.js"></script> -->
+    
+
+</body> 
+
+</html>

@@ -1,0 +1,86 @@
+/* 把我们所有标签的 内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+/* 字体声明 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?p4ssmb');
+    src:  url('fonts/icomoon.eot?p4ssmb#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?p4ssmb') format('truetype'),
+      url('fonts/icomoon.woff?p4ssmb') format('woff'),
+      url('fonts/icomoon.svg?p4ssmb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* em和i是斜体，斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+/* 去掉li的小圆点 */
+li {
+    list-style: none;
+}
+
+img {
+    /* border: 0;是照顾低版本浏览器 如果图片外面包含了链接就会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧空白缝隙的问题 */
+    vertical-align: middle;
+    
+}
+
+button {
+    /* 当鼠标经过button按钮时，鼠标变成小手 */
+    cursor: pointer;
+}
+
+/* 改变链接颜色，取消下划线 */
+/* a {
+    font-family: 'icomoon';
+    color: #666;
+    text-decoration: none;
+} */
+/* 鼠标经过链接时，变化的颜色，伪类选择器 */
+/* a:hover {
+    color: #ABCC03;
+} */
+/* 指定按钮内的字体 */
+button,
+input {
+    /* Unicode编码字体   "\5B8B\4F53"这样做就是宋体的意思，让浏览器兼容更好*/
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: none;
+    outline: none;
+}
+/* 指定网页总体是字体 */
+body {
+    /* CSS3 抗锯齿性，让文字显示的更清晰，放大锯齿变少 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+
+/* 隐藏元素 */
+.hide,
+.none {
+    display: none;
+}
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}

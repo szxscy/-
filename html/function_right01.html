@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐天拍-DIY表情包-供大家趣味照相的拍照网站，乐天派、趣味拍照、</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="乐天拍-供大家趣味照相的拍照网站，乐天派、趣味拍照、乐天知命，故不忧。乐天知命,古来谁会。" />
+    <!-- 关键字 -->
+    <meta name="Keywords" content="乐天拍,乐天派,拍照,趣味,乐天知命,喜怒哀惊" />
+    <link rel="shortcut icon" href="../images/bitbug_favicon (3).ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="../css/chushihua.css">
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入清除样式文件 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 引入主页样式文件 -->
+    <link rel="stylesheet" href="../css/function_right01.css">
+    <link rel="stylesheet" href="../css/function_right02.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="../js/html2canvas.js"></script> -->
+    <!-- 引入全局变量 route -->
+    <script src="../js/jiekou.js"></script>
+    <style>
+        #cropedBigImg {
+            height: 600px;
+            width: 500px;
+            /* background-color: blueviolet; */
+        }
+
+        #chooseImage {
+
+            display: block;
+            height: 200px;
+            width: 200px;
+            /* background-color: pink; */
+        }
+
+        .a-upload {
+
+            /* background-color: blue; */
+            position: absolute;
+            top: 148px;
+            left: 56px;
+            cursor: pointer;
+            border-radius: 4px;
+            overflow: hidden;
+            padding: 4px 10px;
+            height: 90px;
+            width: 98px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+
+        .a-upload input {
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            z-index: 11;
+            filter: alpha(opacity=0);
+            cursor: pointer
+        }
+
+        .a-upload:hover {
+
+            text-decoration: none
+        }
+
+        .btn_1 {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页面一 -->
+    <div class="w">
+        <div class="quan" style="display: block; z-index: 10;position: absolute;top: 0;left: 0;">
+            <div class="zhongjian">
+                <div class="zj_left">
+                    <ul class="left_hd">
+                        <li>乐</li>
+                        <li>天</li>
+                        <li>拍</li>
+                    </ul>
+                    <div class="left_bd">
+                        <div class="tishi">
+                            点击下方<br>
+                            选择需要DIY的图片
+                        </div>
+
+                        <div class="btn" style="z-index: 10;">
+
+                            <img src="../images/相册.png" alt="">
+                            <a href="javascript:;" class="a-upload">
+                                <input type="file" id="chooseImage" name="file" text="123">
+                                <!-- <img src="../images/相册.png" alt="" class="btn_1"> -->
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="zj_right">
+                    <img src="../images/left_02.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面二 -->
+    <div class="zheng" style="display:none; z-index: 10;position: absolute;top: 0;left: 0;">
+        <div class="left02">
+            <div class="left_hd">
+                <ul>
+                    <li class="le"><img src="../images/le.png" alt=""></li>
+                    <li class="le_02"><img src="../images/le.png" alt=""></li>
+                    <li class="tian"><img src="../images/tian.png" alt=""></li>
+                    <li class="pai"><img src="../images/pai.png" alt=""></li>
+                    <li class="pai_02"><img src="../images/pai.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="yinc">
+                <div class="left_bd">
+                    <ul class="tietu_anniu">
+                        <li><img src="../upload/tiezhi (1).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (2).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (3).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (4).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (5).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (6).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (7).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (8).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (9).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (10).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (11).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (12).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (13).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (14).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (15).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (16).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (17).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (18).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (19).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (20).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (21).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (22).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (23).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (24).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (25).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (26).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (27).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (28).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (29).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (1).gif" alt=""></li>
+                        <li><img src="../upload/tiezhi (30).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (31).png" alt=""></li>
+                        <li><img src="../upload/tiezhi (32).png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="middle02">
+            <div id="previewImage" style="position: absolute; top: 0;left: 0;z-index: -1; height: 610px;width: 510px;">
+            </div>
+
+            <div class="image" id="html-content-holder">
+                <!-- 导出的图片在这 -->
+                <img id="cropedBigImg" value='custom' alt="weixuanze" data-address='' title="a" src="" />
+                <ul class="tiezhi">
+                    <li><img src="../upload/tiezhi (1).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (2).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (3).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (4).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (5).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (6).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (7).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (8).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (9).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (10).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (11).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (12).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (13).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (14).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (15).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (16).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (17).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (18).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (19).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (20).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (21).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (22).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (23).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (24).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (25).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (26).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (27).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (28).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (29).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (1).gif" alt=""></li>
+                    <li><img src="../upload/tiezhi (30).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (31).png" alt=""></li>
+                    <li><img src="../upload/tiezhi (32).png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right02">
+            <a href="./function_right01.html">
+                <div class="btn01">再来一张</div>
+            </a>
+            <div class="btn02">更多功能</div>
+            <a href="./function_Home.html">
+                <div class="btn03">返回首页</div>
+            </a>
+            <!-- <input id="btn-Preview-Image" type="button" value="预 览" />
+            <a id="btn-Convert-Html2Image" href="#">下载</a> -->
+            <!-- <br /> -->
+        </div>
+    </div>
+
+    <script src="../js/function_right.js"></script>
+    <img src="../images/sun.gif" alt="" class="tianshi">
+    <!-- 鼠标特效 -->
+    <canvas id='world' style="z-index: 9;position: absolute;top: 0;left: 0;"></canvas>
+    <script src="../js/shubiao.js"></script>
+    <script src="../js/tianshi.js"></script>
+    <!-- <script src="../js/function_left01.js"></script> -->
+</body>
+
+</html>
